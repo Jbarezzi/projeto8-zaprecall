@@ -12,7 +12,7 @@ export default function MainPage() {
             </div>
             <Flashcards />
             <Footer>
-                0/4 Concluídos
+                0/4 CONCLUÍDOS
             </Footer>
         </div>
     );

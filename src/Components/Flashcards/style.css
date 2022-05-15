@@ -66,4 +66,8 @@
         margin-bottom: 6px;
         margin-right: 15px;
     }
+
+    .final > p {
+        text-decoration: line-through;
+    }
 }

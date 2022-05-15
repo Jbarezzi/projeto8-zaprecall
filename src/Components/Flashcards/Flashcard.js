@@ -1,13 +1,13 @@
 import React from "react";
-import HiddenCard from "./HiddenCard";
-import CardQuestion from "./CardQuestion";
-import CardAnswer from "./CardAnswer";
+import ClosedCard from "./ClosedCard";
+import OpenedCard from "./OpenedCard";
 
-export default function Flashcard({ questions }) {
-    const [cardFace, setCardFace] = React.useState("initial");
+export default function Flashcard(props) {
+    const [cardIsOpen, setCardIsOpen] = React.useState(false);
+    const [isAnwsered, setIsAnwsered] = React.useState(false);
     return (
        <>
-        {cardFace === "initial" ? <HiddenCard setCardFace={setCardFace}/> : (cardFace === "question" ? <CardQuestion question={questions.question} setCardFace={setCardFace} /> : <CardAnswer answer={questions.answer}/>)}
+        {cardIsOpen === false ? <ClosedCard setCardIsOpen={setCardIsOpen} isAnwsered={isAnwsered}/> : <OpenedCard questions={props.questions} setCardIsOpen={setCardIsOpen} setIsAnwsered={setIsAnwsered}/>}
        </>
     );
 }

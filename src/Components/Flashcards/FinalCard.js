@@ -1,6 +1,6 @@
-export default function HiddenCard({ setCardFace }) {
+export default function FinalCard() {
     return(
-        <button onClick={() => setCardFace("question")}>
+        <button className="final">
             <p>Pergunta</p>
             <ion-icon name="play-outline"></ion-icon>
         </button>

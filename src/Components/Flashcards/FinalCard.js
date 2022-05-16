@@ -1,8 +1,8 @@
-export default function FinalCard() {
+export default function FinalCard({ anwser }) {
     return(
-        <button className="final">
+        <button className={`final ${anwser}`}>
             <p>Pergunta</p>
-            <ion-icon name="play-outline"></ion-icon>
+            <ion-icon name={`${anwser}-circle`}></ion-icon>
         </button>
     );
 }

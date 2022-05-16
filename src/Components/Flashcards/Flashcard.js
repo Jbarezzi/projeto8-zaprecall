@@ -5,9 +5,10 @@ import OpenedCard from "./OpenedCard";
 export default function Flashcard(props) {
     const [cardIsOpen, setCardIsOpen] = React.useState(false);
     const [isAnwsered, setIsAnwsered] = React.useState(false);
+    const [anwser, setAnwser] = React.useState("");
     return (
        <>
-        {cardIsOpen === false ? <ClosedCard setCardIsOpen={setCardIsOpen} isAnwsered={isAnwsered}/> : <OpenedCard questions={props.questions} setCardIsOpen={setCardIsOpen} setIsAnwsered={setIsAnwsered}/>}
+        {cardIsOpen === false ? <ClosedCard setCardIsOpen={setCardIsOpen} isAnwsered={isAnwsered} anwser={anwser} /> : <OpenedCard questions={props.questions} setCardIsOpen={setCardIsOpen} setIsAnwsered={setIsAnwsered} setAnwser={setAnwser}/>}
        </>
     );
 }

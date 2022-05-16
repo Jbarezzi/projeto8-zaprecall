@@ -13,4 +13,16 @@
         font-size: 36px;
         font-family: 'Righteous', cursive;
     }
+
+    [name="checkmark-circle"] {
+        color: #2FBE34;
+    }
+
+    [name="help-circle"] {
+        color: #FF922E;
+    }
+
+    [name="close-circle"] {
+        color: #FF3030;
+    }
 }

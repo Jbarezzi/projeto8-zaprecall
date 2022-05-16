@@ -1,7 +1,7 @@
 import "./style.css";
 import Flashcard from "./Flashcard";
 
-export default function Flashcards() {
+export default function Flashcards({ anwserList ,setAnwserList }) {
     const flashcards = [
         {
             question: "O que é JSX?",
@@ -36,10 +36,12 @@ export default function Flashcards() {
             answer: "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
         },
     ];
+
+    flashcards.sort(() => Math.random() - 0.5);
     
     return (
         <div className="flashcards">
-            {flashcards.map((questions, index) => <Flashcard questions={questions} key={index} />)}
+            {flashcards.map((questions, index) => <Flashcard questions={questions} key={index} index={index} anwserList={anwserList} setAnwserList={setAnwserList}/>)}
         </div>
     );
 }

@@ -80,23 +80,11 @@
         color: #FF3030;
     }
 
-    .close > ion-icon {
-        color: #FF3030;
-    }
-
     .help > p {
         color: #FF922E;
     }
 
-    .help > ion-icon {
-        color: #FF922E;
-    }
-
     .checkmark > p {
-        color: #2FBE34;
-    }
-
-    .checkmark > ion-icon {
         color: #2FBE34;
     }
 }

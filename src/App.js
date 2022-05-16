@@ -9,7 +9,7 @@ export default function App() {
 
     return (
         <>
-            {page === "welcome" ? <Welcome onClick={setPage}/> : <MainPage />}
+            {page === "welcome" ? <Welcome onClick={setPage}/> : <MainPage setPage={setPage}/>}
         </>
     );
 }
